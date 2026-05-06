@@ -1,0 +1,215 @@
+:root {
+    --background: #f5f2ec;
+    --header: #000000;
+    --sub-header: #000000;
+    --contact: #000000;
+
+    --body: #000000;
+    --border: #000000;
+    --section-border: #000000;
+
+}
+
+body {
+    background: var(background);
+    color: var(--ink);
+    /* font-family: var(--sans); */
+    /* font-weight: 300; */
+    line-height: 1.6;
+    padding: 3rem 1.5rem;
+    padding-top: 5px;
+}
+
+.page {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ── HEADER ── */
+header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+
+}
+
+header h1 {
+    /* font-family: var(--serif); */
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+}
+
+header h2 {
+    /* font-family: var(--serif); */
+    font-size: 0.750rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 0.5rem;
+}
+
+.contact {
+    /* font-family: var(--serif); */
+    font-size: 0.750rem;
+}
+
+.contact a {
+    font-size: 0.750rem;
+    color: var(--contact);
+    text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ── SECTIONS ── */
+section {
+    margin-bottom: 1rem;
+}
+
+.section-title,
+.section-title-2 {
+    font-family: var(--mono);
+    font-size: 0.750rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-title-2 {
+    border-top: 1px solid var(--section-border);
+}
+
+/* ── SKILLS ── */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0 1.25rem;
+    align-items: baseline;
+}
+
+.skill-row h4 {
+    font-family: var(--mono);
+    font-size: 0.750rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+    padding-top: 0.1rem;
+}
+
+.skill-row p {
+    font-size: 0.750rem;
+    color: var(--ink);
+    line-height: 1.55;
+}
+
+/* ── JOBS ── */
+.job {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 0.750rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.job-header h4 {
+    margin: 0;
+}
+
+.job-header .company {
+    font-weight: 600;
+}
+
+.job-header .role {
+    font-weight: 400;
+}
+
+.job-date {
+    font-size: 0.750rem;
+    margin: 0;
+    font-weight: 400;
+}
+.job ul {
+    margin: 0.5rem 0 0 1.25rem;
+    margin-top: 0px;
+    padding: 0;
+}
+.job ul li {
+    margin-bottom: 0.25rem;
+    font-size: 0.750rem;
+    line-height: 1.55;
+}
+
+/* ── Education ── */
+.school-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.school-info:last-child {
+    margin-bottom: 0;
+}
+
+.school-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    font-size: 0.750rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.school-header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.school-name,
+.school-separator,
+.school-date {
+    font-size: 0.750rem;
+}
+
+.school-separator {
+    font-weight: 400;
+}
+
+.school-date {
+    margin: 0;
+    font-weight: 400;
+}
+
+.school-degree {
+    margin: 0;
+    font-size: 0.750rem;
+    line-height: 1.55;
+}
